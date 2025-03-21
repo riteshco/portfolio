@@ -1,10 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
 
 
 *{
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .first_sec{
@@ -17,6 +23,29 @@
     background-image: url("image/bg-image1.jpg");
     background-size: cover;
 }
+
+.nav{
+    z-index: 1;
+    width: 100vw;
+    height: 3rem;
+    position: fixed;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    top : 0;
+    background-color: rgba(2, 41, 117, 0.7);
+}
+
+.nav ul{
+    display: flex;
+    justify-content: right;
+    position: relative;
+    right : 1rem;
+    gap: 4rem;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
 .name{
     text-align: center;
     position: relative;
@@ -34,10 +63,7 @@
     position: relative;
     bottom: 2rem;
     font-size: 2.5rem;
-}
-
-.desc:hover {
-    animation: see 7s cubic-bezier(0.075, 0.82, 0.165, 1) 0s none;
+    animation: see 7s cubic-bezier(0.22, 0.91, 0.41, 0.69) 0s forwards;
 }
 
 @keyframes see{
@@ -50,9 +76,42 @@
     }
     100%{
         transform: translateY(3rem);
+        opacity: 1;
     }
 
 }
+
+.about{
+    display: flex;
+}
+
+.aboutleft{
+    height : 60vh;
+    width : 60rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+}
+
+.aboutright{
+    padding-left: 4rem;
+    padding-top: 1rem;
+
+}
+
+.aboutright img{
+    height : 60vh;
+    border-radius: 0.9rem;
+}
+
+.abouthead{
+    font-size: 7rem;
+    font-weight: 600;
+}
+
+.aboutdetail{
+    font-size: 1.5rem;
+}
+
 
 @media (max-width: 700px ) {
         .interests{
@@ -103,15 +162,17 @@
 
 .cards{
     display: flex;
+    justify-content: center;
     align-items: center;
+    padding-left: 1rem;
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 700;
     height: 12rem;
     width: 12rem;
     border-radius: 40px;
     position : absolute;
-    top  : 134vh;
+    top  : 194vh;
     right: 15vw;
     text-shadow: 2px 2px 2px grey;
 }
@@ -143,6 +204,7 @@
 }
 #c5{
     background-color: #00B4D8;
+    padding: 0;
 }
 
 .interests{
@@ -155,7 +217,7 @@
     0%{
     }
     50%{
-        transform: translateY(-12.5rem) ;
+        transform: translateY(-13rem) ;
     }
     100%{
         transform: rotate(52deg);
@@ -166,7 +228,7 @@
     0%{
     }
     50%{
-        transform: translateX(-12.5rem) ;
+        transform: translateX(-13rem) ;
     }
     100%{
         transform: rotate(39deg);
@@ -177,7 +239,7 @@
     0%{
     }
     50%{
-        transform: translateY(12.5rem) ;
+        transform: translateY(13rem) ;
     }
     100%{
         transform: rotate(26deg);
@@ -188,7 +250,7 @@
     0%{
     }
     50%{
-        transform: translateX(12.5rem) ;
+        transform: translateX(14rem) ;
     }
     100%{
         transform: rotate(13deg);
@@ -196,6 +258,94 @@
 }
 
 hr{
+    position: relative;
+    background-color: black;
+    height: 0.01rem;
+    box-shadow: 0.1rem 0.08rem 0.04rem 0.1px;
+}
+
+.skilltitle{
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+.skillcontainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.skillcards{
+    padding-top: 4rem;
+    text-align: center;
+    padding-left: 1rem;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 700;
+    height: 14rem;
+    width: 20rem;
+    border-radius: 40px;
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 100, 0.9);
+    z-index: 1;
+}
+
+.skill1title{
+    transition: opacity 0.5s ease-in ;
+    position: relative;
+    top: 3rem;
+    font-family: "JetBrains Mono", monospace;
+}
+.skill1desc{
+    transition: opacity 0.5s ease-in 0.5s;
+    opacity: 0;
+    font-family: "JetBrains Mono", monospace;
+}
+
+
+#skillcard1:hover .skill1title{
+    opacity: 0;
+}
+#skillcard1:hover .skill1desc{
+    opacity: 1;
+}
+
+
+.skill2title{
+    transition: opacity 0.5s ease-in ;
+    position: relative;
+    top: 3rem;
+    font-family: "Pixelify Sans", sans-serif;
+}
+.skill2desc{
+    transition: opacity 0.5s ease-in 0.5s;
+    opacity: 0;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+#skillcard2:hover .skill2title{
+    opacity: 0;
+}
+#skillcard2:hover .skill2desc{
+    opacity: 1;
+}
+
+
+@keyframes expand {
+    0%{}
+    100%{
+        height: 42rem;
+    }
+}
+
+.projtitle{
+    font-size: 6rem;
+    margin-bottom: 6rem;
+    font-weight: 900;
+}
+
+.projects hr{
     position: relative;
     left: 10vw;
     background-color: black;
@@ -224,25 +374,76 @@ hr{
     height: 30vh;
 }
 
+.projects img{
+    height: 6rem;
+}
+
+@keyframes butt {
+    0%{
+    }
+    100%{
+        height: 8rem;
+    }
+}
+
+.projects img:hover{
+    animation: butt 0.2s linear 0s forwards;
+}
+
+.projects img:active{
+    animation: butt 0.2s linear 0s reverse;
+}
+
+.projcards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    height: 12rem;
+    width: 30rem;
+    border-radius: 40px;
+    margin-top: 1rem;
+    background-color: rgba(3, 4, 94, 1);
+}
+
+#projcard2{
+    background-color: #00B4D8;
+}
+
 .title1{
     width: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 5rem;
+    font-weight: 700;
+    color: #03045E;
 }
 
 .title2{
     width: 50vw;
+    padding-right: 3rem;
     display: flex;
     align-items: center;
     font-size: 5rem;
     justify-content: right;
+    font-weight: 700;
+    color: #00B4D8;
 }
 .title3{
     width: 50vw;
+    padding-left: 3rem;
     display: flex;
     align-items: center;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #03045E;
+}
+
+.arrow{
     font-size: 5rem;
 }
 
@@ -336,4 +537,33 @@ hr{
 
 .contacts ul li{
     padding: 1vh 0;
+}
+
+.contactlinks{
+    display: flex;
+    justify-content: space-around;
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    position: relative;
+    left : -5rem;
+}
+
+#contactlink1{
+    transition: font-size 0.5s ease-in;
+}
+#contactlink2{
+    transition: font-size 0.5s ease-in;
+}
+#contactlink3{
+    transition: font-size 0.5s ease-in;
+}
+
+#contactlink1:hover{
+    font-size: 2.4rem;
+}
+#contactlink2:hover{
+    font-size: 2.4rem;
+}
+#contactlink3:hover{
+    font-size: 2.4rem;
 }

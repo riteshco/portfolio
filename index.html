@@ -6,8 +6,18 @@
     <title>Ritesh - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
     <div class="first_sec">
+        <div class="nav">
+            <ul>
+                <li><a href="#body">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projtitle">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
         <div class="show">
 
             <div class="name">
@@ -21,8 +31,26 @@
         </div>
     </div>
 
+    <hr>
 
-    <div class="interests">
+
+    <div class="about" id="about">
+        <div class="aboutleft">
+            <div class="abouthead">
+                Me?
+            </div>
+            <div class="aboutdetail">
+                I am an student at IIT Roorkee with branch ECE and currently 1st year in BTech Programme. After removing the institute formality , I am a software developer with great interests in game and web development espically I like to mix them with AI models of my own. I love neural networks playing with my game or guiding user through my sites online .That's the formal side of my personality. Besides these , I am a novel lover and writer as well who sometimes wonder theories in astrophysics , astronomy and have a hobby of playing chess , badminton and a neck of solving different puzzles like sudoku and a tones of different puzzle cubes.
+            </div>
+        </div>
+        <div class="aboutright">
+            <img src="image/me.jpg" alt="me">
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="interests" id="interests">
         <div class="left">
             <div class="int_text">
                 <p class="heading">Want to know my interests?</p>
@@ -38,20 +66,49 @@
 
         </div>
     </div>
+
+    <hr>
+
+    <div class="skills" id="skills">
+        <div class="skilltitle">Skills</div>
+        <div class="skillcontainer">
+            <div class="skillcards" id="skillcard1">
+                <div class="skill1title">Coding Languages</div>
+                <div class="skill1desc">Python , C++ , C# and GDScript</div>
+            </div>
+            
+            <div class="skillcards" id="skillcard2">
+                <div class="skill2title">Game Engines</div>
+            <div class="skill2desc">Pygame , Godot and Unity</div>
+        </div>
+    </div>
+
     <hr>
     <div class="projects">
+        <div class="projtitle" id="projtitle">
+            Projects
+        </div>
+        <hr>
         <div class="p1">
             <div class="title1">
                 Social-Gram
             </div>
+            <div class="projcards">
+                Social-Gram is a social media website in progress made using Django Framework. It is now like a base for a bigger social website projects (can be branched out in different ways from this).
+            </div>
             <div class="link1">
-                <button type="button" id="btn1"><a href="https://github.com/riteshco/Social-Gram" target="_blank"> Github Link </a></button>
+                <div class="arrow">-></div>
+                <a href="https://github.com/riteshco/Social-Gram" target="_blank"><img src="image/github-logo.png" alt="githubfav"></a>
             </div>
         </div>
         <hr id="hr1">
         <div class="p2">
             <div class="link2">
-                <button type="button" id="btn2"><a href="https://github.com/riteshco/Flappy-AI" target="_blank"> Github Link </a></button>
+                <a href="https://github.com/riteshco/Flappy-AI" target="_blank"><img src="image/github-logo.png" alt="githubfav"></a>
+                <div class="arrow"><-</div>
+            </div>
+            <div class="projcards" id="projcard2">
+                Flappy Bird ai model made using NEAT algorithm , it is a training model . If you want to save the perfect ai bird , just import pickle and save the model.
             </div>
             <div class="title2">
                 Flappy - AI
@@ -62,8 +119,12 @@
             <div class="title3">
                 Game Of Life
             </div>
+            <div class="projcards">
+                This is a copy of Convoy's Game of Life in which cells simulate their life on the basis of three simple rules . Can be used to generate patterns , make circuits , logic gates and random creative simulations.
+            </div>
             <div class="link3">
-                <button type="button" id="btn3"><a href="https://github.com/riteshco/Game_of_life" target="_blank"> Github Link </a></button>
+                <div class="arrow">-></div>
+                <a href="https://github.com/riteshco/Game_of_life" target="_blank"><img src="image/github-logo.png" alt="githubfav"></a>
             </div>
         </div>
     <hr>
@@ -71,11 +132,16 @@
 
     <hr>
 
-    <div class="contacts">
+    <div class="contacts" id="contacts">
         <ul>
             <li>Phone : +91 9910760830</li>
             <li>Email : riteshgadwalv2@gmail.com</li>
             <li>Address : Rajendra Bhawan , IIT Roorkee , Roorkee</li>
+        </ul>
+        <ul class="contactlinks">
+            <li id="contactlink1"><a href="https://www.github.com/riteshco" target="_blank">Github</a></li>
+            <li id="contactlink2"><a href="https://www.instagram.com/ritesh__gadwal/" target="_blank">Instagram</a></li>
+            <li id="contactlink3"><a href="" target="_blank">Linked In</a></li>
         </ul>
     </div>
 
