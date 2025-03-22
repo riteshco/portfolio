@@ -83,6 +83,7 @@ a{
 
 .about{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .aboutleft{
@@ -114,8 +115,49 @@ a{
 
 
 @media (max-width: 700px ) {
+        *{
+            text-align: center;
+        }
+        .title1{
+            padding-left: 2rem;
+        }
+        .title2{
+            padding-left: 2.5rem;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-around;
+        }
+        .nav ul{
+            display: flex;
+            justify-content: space-around;
+            font-size: 0.5rem;
+        }
+        .nav ul li{
+            display: flex;
+            justify-content: center;
+        }
+        .name{
+            font-size: 4rem;
+        }
+        .desc{
+            font-size: 2rem;
+            text-align: center;
+        }
+        .about{
+            flex-wrap: wrap;
+        }
+        .aboutright{
+            display: flex;
+        }
+        .aboutdetail{
+            font-size: 1rem;
+            text-align: center;
+            padding-right: 1rem;
+        }
         .interests{
-            position: relative;
+            overflow-y: hidden;
+            flex-wrap: wrap;
         }
         .cards{
             justify-content: center;
@@ -123,18 +165,34 @@ a{
             font-weight: 100;
             height : 8rem;
             width : 8rem;
-        }
+            position: relative;
+            top : 12rem;
+            }
         #c1{
-            right : 12rem;}
+            visibility: hidden;
+            right : 12rem;
+            }
         #c2{
             visibility: hidden;
-            right : 12rem;}
+            right : 12rem;
+            }
         #c3{
-            right : 12rem;}
+            visibility: hidden;
+            right : 12rem;
+            }
         #c4{
-            right : 12rem;}
+            visibility: hidden;
+            right : 12rem;
+            }
         #c5{
-            right : 12rem;}
+            visibility: hidden;
+            right : 12rem;
+            }
+
+        .contactlinks{
+            padding-left: 7rem;
+            gap: 0.5rem;
+        }
 
 }
 
@@ -162,6 +220,7 @@ a{
 
 .cards{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding-left: 1rem;
@@ -175,6 +234,8 @@ a{
     top  : 194vh;
     right: 15vw;
     text-shadow: 2px 2px 2px grey;
+    overflow: hidden;
+    transition: all 0.5s ease;
 }
 
 #c1{
@@ -271,6 +332,7 @@ hr{
 
 .skillcontainer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 2rem;
@@ -363,19 +425,34 @@ hr{
 
 .p1{
     display: flex;
-    height: 30vh;
+    flex-wrap: wrap;
 }
 .p2{
     display: flex;
-    height: 30vh;
+    flex-wrap: wrap;
 }
 .p3{
     display: flex;
-    height: 30vh;
+    flex-wrap: wrap;
 }
 
 .projects img{
     height: 6rem;
+}
+
+@media (min-width:1000px){
+    .p1{
+        height : 30vh;
+    flex-wrap: nowrap;
+    }
+    .p2{
+        height : 30vh;
+        flex-wrap: nowrap;
+    }
+    .p3{
+        height : 30vh;
+        flex-wrap: nowrap;
+    }
 }
 
 @keyframes butt {
