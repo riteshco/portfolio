@@ -126,16 +126,20 @@ a{
         }
         .nav{
             display: flex;
-            justify-content: space-around;
+            justify-content: left;
         }
         .nav ul{
             display: flex;
-            justify-content: space-around;
+            justify-content: left;
             font-size: 0.5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            gap: 2.6rem;
         }
         .nav ul li{
             display: flex;
             justify-content: center;
+            overflow-x: visible;
         }
         .name{
             font-size: 4rem;
