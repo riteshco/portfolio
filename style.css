@@ -155,7 +155,7 @@ a{
             display: flex;
         }
         .aboutdetail{
-            font-size: 1rem;
+            font-size: 1.35rem;
             text-align: center;
             padding-right: 1rem;
         }
@@ -172,31 +172,38 @@ a{
             position: relative;
             top : 12rem;
             }
+        #c1 , #c2 , #c3 , #c4 , #c5{
+            position: absolute;
+            top : 285vh;
+            right : 3.5rem;
+            transform: none !important;
+            text-align: center;
+        }
+        #c2{
+            right: 17rem;
+        }
+        #c3{
+            right: 17rem;
+            top : 304vh;
+        }
+        #c4{
+            top : 304vh;
+        }
         #c1{
             visibility: hidden;
-            right : 12rem;
-            }
-        #c2{
-            visibility: hidden;
-            right : 12rem;
-            }
-        #c3{
-            visibility: hidden;
-            right : 12rem;
-            }
-        #c4{
-            visibility: hidden;
-            right : 12rem;
-            }
-        #c5{
-            visibility: hidden;
-            right : 12rem;
-            }
+        }
+
+        .about img{
+            position: relative;
+            right : 2rem;
+        }
 
         .contactlinks{
             padding-left: 7rem;
             gap: 0.5rem;
         }
+
+
 
 }
 
