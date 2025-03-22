@@ -610,7 +610,6 @@ hr{
 .contacts{
     padding-top: 10vh;
     padding-left: 10vw;
-    height: 40vh;
     background-image: url("image/bg-image2.jpg");
     color: white;
     font-size: 2rem;
@@ -648,3 +647,65 @@ hr{
 #contactlink3:hover{
     font-size: 2.4rem;
 }
+
+
+
+.container {
+    /* background-color: #007bff; */
+    width: 100%;
+    max-width: 40vw;
+    color: white;
+  }
+  
+  h1 {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  input, textarea, button {
+    width: 80%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+  }
+  
+  input, textarea {
+    background-color: #e0f2ff;
+    color: #333;
+  }
+  
+  button {
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    width: 85%;
+  }
+  
+  button:hover {
+    background-color: #003f80;
+  }
+  
+  textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      width: 100%;
+      position: relative;
+      left: 6rem;
+    }
+    .container h1{
+        font-size: 2rem;
+    }
+  }
+  
