@@ -131,7 +131,7 @@ a {
     font-size: 1.5rem;
 }
 
-@media (min-width:1500px) {
+@media (min-width:1535px) {
     .left {
         height: 100vh;
         width: 45rem;
@@ -304,6 +304,7 @@ hr {
     margin-top: 1rem;
     background-color: rgba(0, 0, 100, 0.9);
     z-index: 1;
+    box-shadow: 0.1rem 0.2rem 0.6rem 0.1rem black;
 }
 
 .skill-1-title {
@@ -642,7 +643,7 @@ hr {
 
 @media (min-width:1000px) {
     .contacts ul li {
-        padding: 1vh 0;
+        padding: 1.5rem 0;
     }
 }
 
@@ -828,7 +829,7 @@ form {
 
 }
 
-@media (max-width : 1500px) {
+@media (max-width : 1535px) {
 
     .interests {
         height: auto;
@@ -928,7 +929,7 @@ form {
 
 }
 
-@media (min-width:1500px) {
+@media (min-width:1535px) {
     .p1 {
         flex-wrap: nowrap;
         justify-content: center;
@@ -945,7 +946,7 @@ form {
     }
 }
 
-@media (min-width:1500px) {
+@media (min-width:1535px) {
     .rustom {
         visibility: hidden;
         height: 0;
