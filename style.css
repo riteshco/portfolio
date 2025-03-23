@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pixelify+Sans:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
 
 
+:root {
+    /* from darkest to lightest */
+    --blue-1: #03045E;
+    --blue-2: #023E8A;
+    --blue-3: #0077B6;
+    --blue-4: #0096C7;
+    --blue-5: #00B4D8;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -50,17 +59,18 @@ a {
     font-size: 1.8rem;
 }
 
-.nav ul li{
-    transition : transform 0.05s linear 0s;
+.nav ul li {
+    transition: transform 0.05s linear 0s;
 }
 
-@media (min-width: 1000px){
-    .nav ul li:hover{
-        transform : translate(-0.1rem , -0.5rem);
+@media (min-width: 1000px) {
+    .nav ul li:hover {
+        transform: translate(-0.1rem, -0.5rem);
     }
-    .nav ul{
 
-        padding-top : 0.5rem;
+    .nav ul {
+
+        padding-top: 0.5rem;
     }
 }
 
@@ -102,8 +112,8 @@ a {
 
 }
 
-@media (min-width : 1000px){
-    .about{
+@media (min-width : 1000px) {
+    .about {
         display: flexbox;
         justify-content: space-around;
     }
@@ -135,7 +145,6 @@ a {
 .aboutright img {
     height: 80vh;
 }
-
 
 
 .aboutright img:hover {
@@ -203,14 +212,14 @@ a {
 }
 
 #c1 {
-    background-color: #03045E;
+    background-color: var(--blue-1);
     transform: rotate(52deg);
 
     animation: go1 8s ease-in-out 0s infinite;
 }
 
 #c2 {
-    background-color: #023E8A;
+    background-color: var(--blue-2);
     transform: rotate(39deg);
 
     animation: go2 8s ease-in-out 0s infinite;
@@ -218,21 +227,21 @@ a {
 
 #c3 {
     font-family: "Pixelify Sans", sans-serif;
-    background-color: #0077B6;
+    background-color: var(--blue-3);
     transform: rotate(26deg);
 
     animation: go3 8s ease-in-out 0s infinite;
 }
 
 #c4 {
-    background-color: #0096C7;
+    background-color: var(--blue-4);
     transform: rotate(13deg);
 
     animation: go4 8s ease-in-out 0s infinite;
 }
 
 #c5 {
-    background-color: #00B4D8;
+    background-color: var(--blue-5);
     padding: 0;
 }
 
@@ -413,25 +422,10 @@ hr {
     margin-bottom: 8rem;
 }
 
-.p2 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 8rem;
-    margin-bottom: 8rem;
-}
-
-.p3 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 8rem;
-    margin-bottom: 8rem;
-}
-
 .projects img {
     padding-left: 2rem;
     height: 3rem;
 }
-
 
 
 @keyframes butt {
@@ -442,27 +436,11 @@ hr {
     }
 }
 
-.title1 img:hover {
+.proj-left img:hover {
     animation: butt 0.2s linear 0s forwards;
 }
 
-.title2 img:hover {
-    animation: butt 0.2s linear 0s forwards;
-}
-
-.title3 img:hover {
-    animation: butt 0.2s linear 0s forwards;
-}
-
-.title1 img:active {
-    animation: butt 0.2s linear 0s reverse;
-}
-
-.title2 img:active {
-    animation: butt 0.2s linear 0s reverse;
-}
-
-.title3 img:active {
+.proj-left img:active {
     animation: butt 0.2s linear 0s reverse;
 }
 
@@ -473,34 +451,10 @@ hr {
     padding-right: 1rem;
 }
 
-.proj-cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 1rem;
-    color: white;
-    font-size: 1rem;
-    font-weight: 700;
-    height: 12rem;
-    width: 30rem;
-    border-radius: 40px;
-    margin-top: 1rem;
-    background-color: rgba(3, 4, 94, 1);
-}
-
-#proj-card2 {
-    background-color: #00B4D8;
-}
 
 .proj-left {
     padding-left: 2rem;
     padding-right: 2rem;
-}
-
-.proj-right {
-    padding-left: 2rem;
-    padding-right: 2rem;
-
 }
 
 .title1 {
@@ -509,7 +463,7 @@ hr {
     align-items: center;
     font-size: 5rem;
     font-weight: 700;
-    color: #03045E;
+    color: var(--blue-1);
 }
 
 .title2 {
@@ -517,7 +471,7 @@ hr {
     align-items: center;
     font-size: 5rem;
     font-weight: 700;
-    color: #00B4D8;
+    color: var(--blue-5);
 }
 
 @media (min-width : 1000px) {
@@ -542,7 +496,7 @@ hr {
     align-items: center;
     font-size: 5rem;
     font-weight: 700;
-    color: #03045E;
+    color: var(--blue-1);
 }
 
 
@@ -556,95 +510,13 @@ hr {
 }
 
 
-
-.link1 {
+.link {
     width: 50vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.link2 {
-    width: 50vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.link3 {
-    width: 50vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.projects button {
-    background-color: rgb(70, 31, 228);
-    height: 6rem;
-    width: 16rem;
-    border: none;
-    border-radius: 4rem;
-    font-family: "Anton", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2.4rem;
-    color: white;
-    text-shadow: 0.15rem 0.02rem 0.02rem black;
-}
-
-#btn1 {
-    background-color: rgb(3, 4, 94);
-}
-
-#btn1:hover {
-    background-color: rgba(3, 4, 94, 0.9);
-}
-
-#btn1:active {
-    background-color: rgba(3, 4, 94, 0.8);
-}
-
-#btn2 {
-    background-color: rgb(0, 119, 182);
-}
-
-#btn2:hover {
-    background-color: rgba(0, 119, 182, 0.9);
-}
-
-#btn2:active {
-    background-color: rgba(0, 119, 182, 0.8);
-}
-
-#btn3 {
-    background-color: rgb(0, 180, 216);
-}
-
-#btn3:hover {
-    background-color: rgba(0, 180, 216, 0.9);
-}
-
-#btn3:active {
-    background-color: rgba(0, 180, 216, 0.8);
-}
-
-.projects button:hover {
-    cursor: pointer;
-    height: 7rem;
-    width: 18rem;
-    font-size: 2.6rem;
-}
-
-.projects button:active {
-    height: 6rem;
-    width: 16rem;
-    font-size: 2.4rem;
-}
-
-.projects a {
-    color: inherit;
-    text-decoration: none;
-}
 
 .contacts {
     padding-top: 10vh;
@@ -653,7 +525,6 @@ hr {
     color: white;
     font-size: 2rem;
 }
-
 
 
 .contact-links {
@@ -669,11 +540,8 @@ hr {
 }
 
 .container {
-    /* background-color: #007bff; */
     position: relative;
-    /* left: 23vw; */
     width: 100%;
-    /* max-width: 40vw; */
     color: white;
 }
 
@@ -695,8 +563,6 @@ hr {
 #contact-link3 img:hover {
     height: 6rem;
 }
-
-
 
 
 h1 {
@@ -792,7 +658,6 @@ form {
 
     .desc {
         font-size: 2rem;
-        text-align: center;
     }
 
     .about {
@@ -805,7 +670,6 @@ form {
 
     .aboutdetail {
         font-size: 1.35rem;
-        text-align: center;
         padding-right: 1rem;
     }
 
@@ -814,19 +678,7 @@ form {
         right: 2rem;
     }
 
-    .projects img {
-        position: relative;
-    }
-
     .p1 {
-        justify-content: center;
-    }
-
-    .p2 {
-        justify-content: center;
-    }
-
-    .p3 {
         justify-content: center;
     }
 
@@ -837,14 +689,11 @@ form {
 
     .title2 {
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .title3 {
         flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .title2 {
         justify-content: center;
     }
 
@@ -899,19 +748,19 @@ form {
     }
 
     #cr1 {
-        background-color: #023E8A;
+        background-color: var(--blue-2);
     }
 
     #cr2 {
-        background-color: #0077B6;
+        background-color: var(--blue-3);
     }
 
     #cr3 {
-        background-color: #0096C7;
+        background-color: var(--blue-4);
     }
 
     #cr4 {
-        background-color: #00B4D8;
+        background-color: var(--blue-5);
     }
 
     .rustom {
@@ -955,16 +804,6 @@ form {
         flex-wrap: nowrap;
         justify-content: center;
     }
-
-    .p2 {
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
-
-    .p3 {
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
 }
 
 @media (min-width:1535px) {
@@ -981,14 +820,8 @@ form {
     }
 }
 
-@media (max-width:1535px){
-    .p1{
-        justify-content: center;
-    }
-    .p2{
-        justify-content: center;
-    }
-    .p3{
+@media (max-width:1535px) {
+    .p1 {
         justify-content: center;
     }
 }
