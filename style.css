@@ -959,3 +959,15 @@ form {
         width: 0;
     }
 }
+
+@media (max-width:1535px){
+    .p1{
+        justify-content: center;
+    }
+    .p2{
+        justify-content: center;
+    }
+    .p3{
+        justify-content: center;
+    }
+}
