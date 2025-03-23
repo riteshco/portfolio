@@ -102,6 +102,13 @@ a {
 
 }
 
+@media (min-width : 1000px){
+    .about{
+        display: flexbox;
+        justify-content: space-around;
+    }
+}
+
 .about {
     display: flex;
     flex-wrap: wrap;
