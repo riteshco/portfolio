@@ -13,6 +13,10 @@
     justify-content: center;
 }
 
+.align-center{
+    align-items: center;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +37,6 @@ a {
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     color: antiquewhite;
     background-image: url("image/bg-image1.jpg");
     background-size: cover;
@@ -46,7 +49,6 @@ a {
     position: fixed;
     display: flex;
     justify-content: right;
-    align-items: center;
     top: 0;
     background-color: rgba(2, 41, 117, 1);
 }
@@ -57,7 +59,6 @@ a {
     position: relative;
     right: 1rem;
     gap: 4rem;
-    align-items: center;
     font-size: 1.8rem;
 }
 
@@ -167,7 +168,6 @@ a {
 
 .cards {
     display: flex;
-    align-items: center;
     padding-left: 1rem;
     color: white;
     font-size: 2.2rem;
@@ -274,7 +274,6 @@ hr {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
     padding-bottom: 2rem;
 }
 
@@ -401,23 +400,6 @@ hr {
 
 .title1 {
     display: flex;
-    align-items: center;
-    font-size: 5rem;
-    font-weight: 700;
-    color: var(--blue-1);
-}
-
-.title2 {
-    display: flex;
-    align-items: center;
-    font-size: 5rem;
-    font-weight: 700;
-    color: var(--blue-5);
-}
-
-.title3 {
-    display: flex;
-    align-items: center;
     font-size: 5rem;
     font-weight: 700;
     color: var(--blue-1);
@@ -452,7 +434,6 @@ hr {
 .link {
     width: 50vw;
     display: flex;
-    align-items: center;
 }
 
 .contacts {
