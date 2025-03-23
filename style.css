@@ -50,6 +50,20 @@ a {
     font-size: 1.8rem;
 }
 
+.nav ul li{
+    transition : transform 0.05s linear 0s;
+}
+
+@media (min-width: 1000px){
+    .nav ul li:hover{
+        transform : translate(-0.1rem , -0.5rem);
+    }
+    .nav ul{
+
+        padding-top : 0.5rem;
+    }
+}
+
 .name {
     z-index: 1;
     text-align: center;
