@@ -325,7 +325,7 @@ hr {
 }
 
 .skill-2-desc {
-    transition: opacity 0.2s ease-in 0.2s;
+    transition: opacity 0.2s ease-in;
     opacity: 0;
     font-family: "Pixelify Sans", sans-serif;
 }
