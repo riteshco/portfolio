@@ -21,6 +21,7 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    box-sizing: border-box;
     font-family: "Nunito Sans", sans-serif;
 }
 
@@ -50,7 +51,7 @@ a {
     display: flex;
     justify-content: right;
     top: 0;
-    background-color: rgba(2, 41, 117, 1);
+    background-color: var(--blue-1);
 }
 
 .nav ul {
@@ -85,13 +86,13 @@ a {
 }
 
 .show {
-    height: 40vh;
+    /* height: 40vh; */
+    height: auto;
 }
 
 .desc {
     opacity: 0;
     position: relative;
-    bottom: 13rem;
     font-size: 2.5rem;
     animation: see 2s cubic-bezier(0.22, 0.91, 0.41, 0.69) 1s forwards;
 }
@@ -99,6 +100,7 @@ a {
 @keyframes see {
     0% {
         opacity: 0;
+        transform: translateY(-50%)
     }
 
     40% {
@@ -107,7 +109,7 @@ a {
     }
 
     100% {
-        transform: translateY(14rem);
+        transform: translateY(0);
         opacity: 1;
     }
 }
@@ -115,6 +117,7 @@ a {
 .about {
     display: flex;
     flex-wrap: wrap;
+    padding-bottom: 2rem;
 }
 
 @media (min-width: 1000px) {
@@ -137,7 +140,7 @@ a {
 }
 
 .aboutright img {
-    height: 80vh;
+    height: 38rem;
     border-radius: 0.9rem;
     transition: transform 0.1s ease-in 0s;
 }
@@ -405,6 +408,7 @@ hr {
     color: var(--blue-1);
 }
 
+
 @media (min-width: 1000px) {
     .title1 {
         width: 50vw;
@@ -422,13 +426,17 @@ hr {
     }
 }
 
+
 .arrow img {
     position: relative;
-    right: 1rem;
     width: 18rem;
     height: 12rem;
+    /* right: 1rem; */
     border-radius: 2rem;
-    padding: 1rem;
+    padding: 0.5rem;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
 
 .link {
@@ -566,6 +574,11 @@ form {
     .container h1 {
         font-size: 2rem;
     }
+
+    .contact-links img{
+        height : 2rem;
+    }
+
 }
 
 @media (max-width: 800px) {
