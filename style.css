@@ -252,7 +252,7 @@ a {
 
 @keyframes go4 {
     50% {
-        transform: translateX(14rem);
+        transform: translateX(13rem);
     }
     100% {
         transform: rotate(13deg);
@@ -527,7 +527,7 @@ button:hover {
 
 textarea {
     resize: none;
-    height: 100px;
+    height: 6rem;
 }
 
 form {
